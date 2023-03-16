@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">RESTAURANT MANAGEMENT SYSTEM</string>
+    <string name="title_book">Table Order</string>
+    <string name="title_menu">Product</string>
+    <string name="title_statistical">Statistical</string>
+    <string name="add_drink">Add New Product</string>
+    <string name="done">Finish</string>
+    <string name="no_menu">Do Not Have Product</string>
+    <string name="pay">Payment</string>
+    <string name="update_menu">Update Table</string>
+    <string name="save">Save Product</string>
+    <string name="name_drink">Name Product</string>
+    <string name="price">Price</string>
+    <string name="update">Update</string>
+    <string name="delete">Delete</string>
+    <string name="add">Add New</string>
+    <string name="update_drink">Update Product</string>
+    <string name="print_order">Export Order Bill</string>
+    <string name="id_bill">Order Bill ID: %s</string>
+    <string name="not_user_name">Account Cannot Empty</string>
+    <string name="not_password">Password is Wrong!!!</string>
+    <string name="user_name">Account</string>
+    <string name="password">Password</string>
+    <string name="login">LOGIN</string>
+    <string name="setting">Setting</string>
+    <string name="title_activity_note">NoteActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Done</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Enter your note</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+</resources>
