@@ -98,13 +98,8 @@ public class MainActivity extends AppCompatActivity {
             databaseHandler.addBook(new Table());
             databaseHandler.addBook(new Table());
 
-            //databaseHandler.addDrink(new Drink("Trà đào cam sả",0,40000));
-            //databaseHandler.addDrink(new Drink("Trà sen vàng",0,50000));
-            // databaseHandler.addDrink(new Drink("Trà vải",0,30000));
-            // databaseHandler.addDrink(new Drink("Trà long nhãn hạt chia",0,40000));
-            // databaseHandler.addDrink(new Drink("Trà Sữa Mắc Ca Trân Châu",0,50000));
-            //databaseHandler.addDrink(new Drink("Hồng Trà Latte Macchiato",0,30000));
-            //databaseHandler.addDrink(new Drink("Hồng Trà Sữa Nóng",0,50000));
+            //databaseHandler.addDrink(new Drink("Chicken Pizza",0,40000));
+
 
         }catch(Exception e){
             e.printStackTrace();

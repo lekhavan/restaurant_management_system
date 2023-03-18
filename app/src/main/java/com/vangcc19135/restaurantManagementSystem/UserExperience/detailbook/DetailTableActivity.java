@@ -5,7 +5,6 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
-import android.widget.Toast;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
@@ -21,7 +20,6 @@ import com.vangcc19135.restaurantManagementSystem.UserExperience.entity.Drink;
 import com.vangcc19135.restaurantManagementSystem.UserExperience.entity.Table;
 import com.vangcc19135.restaurantManagementSystem.UserExperience.event.ListProductSelectEvent;
 import com.vangcc19135.restaurantManagementSystem.UserExperience.event.UpdateTableEvent;
-import com.vangcc19135.restaurantManagementSystem.UserExperience.note.NoteActivity;
 import com.vangcc19135.restaurantManagementSystem.UserExperience.order.OrderActivity;
 import com.vangcc19135.restaurantManagementSystem.UserExperience.selectproduct.SelectProductActivity;
 
@@ -42,7 +40,6 @@ public class DetailTableActivity extends AppCompatActivity {
 
     private Table table;
 
-    private Table note;
 
 
 
@@ -57,16 +54,12 @@ public class DetailTableActivity extends AppCompatActivity {
         databaseHandler = new DatabaseHandler(DetailTableActivity.this, DatabaseHandler.DATABASE_NAME, null, DatabaseHandler.DATABASE_VERSION);
 
         table = getIntent().getParcelableExtra(DetailBook);
-        if (table != null){
-            binding.tvBook.setText("Table " + table.getId());
-        }else {
-            // xử lý nếu thực thể Table null
-            Toast.makeText(this, "Table is null", Toast.LENGTH_SHORT).show();
-            finish(); // kết thúc Activity
-        }
+        binding.tvBook.setText("Table " + table.getId());
+
         initRecyclerListDrink();
 
         initListener();
+
 
     }
 
@@ -86,6 +79,7 @@ public class DetailTableActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
         binding.flbAddNote.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

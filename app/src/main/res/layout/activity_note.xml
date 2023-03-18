@@ -1,24 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.vangcc19135.restaurantManagementSystem.UserExperience.note.NoteActivity">
+    android:orientation="vertical">
 
     <EditText
-        android:id="@+id/noteEdit"
-        android:layout_width="301dp"
-        android:layout_height="157dp"
-        android:layout_marginLeft="55dp"
-        android:layout_marginTop="150dp" />
+        android:id="@+id/editText"
+        android:layout_width="match_parent"
+        android:layout_height="144dp"
+        android:layout_marginTop="200dp"
+        android:hint="Enter your note" />
 
     <Button
-        android:id="@+id/Back"
+        android:id="@+id/saveButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="150dp"
-        android:layout_marginTop="350dp"
-        android:text="Back" />
+        android:layout_marginStart="135dp"
+        android:layout_marginTop="20dp"
+        android:text="Save Your Note"
+        android:textAlignment="center" />
 
-</androidx.coordinatorlayout.widget.CoordinatorLayout>
+    <Button
+        android:id="@+id/BackNote"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="155dp"
+        android:layout_marginTop="20dp"
+        android:text="Back"
+        android:textAlignment="center" />
+
+</LinearLayout>
