@@ -11,6 +11,7 @@ import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.vangcc19135.RestaurantManagementSystem.R;
+import com.vangcc19135.restaurantManagementSystem.MainActivity;
 
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
@@ -46,7 +47,7 @@ public class NoteActivity extends AppCompatActivity {
         back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(NoteActivity.this, DetailTableActivity.class);
+                Intent intent = new Intent(NoteActivity.this, MainActivity.class);
                 startActivity(intent);
             }
         });
