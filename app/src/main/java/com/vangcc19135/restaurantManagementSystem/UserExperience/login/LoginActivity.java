@@ -19,8 +19,8 @@ public class LoginActivity extends AppCompatActivity {
 
 
     String employee = "employee";
-    String manager = "manager";
-    String password = "123";
+    String manager = "admin";
+    String password = "admin";
 
     String passswordE= "1234";
 

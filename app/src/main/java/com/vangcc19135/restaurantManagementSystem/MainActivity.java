@@ -86,7 +86,7 @@ public class MainActivity extends AppCompatActivity {
 
     private void addDatabase() {
         try{
-            //10 bàn
+
             databaseHandler.addBook(new Table());
             databaseHandler.addBook(new Table());
             databaseHandler.addBook(new Table());
